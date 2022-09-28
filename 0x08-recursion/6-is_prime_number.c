@@ -1,52 +1,19 @@
 #include "main.h"
 
-/**
- *evaluate_num - recursion loop
- *@num: num
- *@iterator: number to iterate
- *Return: return 1 or 0
- */
-
-int evaluate_num(int num, int iterator)
-{
-
-if (iterator == num - 1)
-{
-return (1);
-}
-
-if (num % iterator != 0)
-{
-return (evaluate_num(num, iterator + 1));
-}
-
-return (0);
-
-}
+int is_divisible(int num, int div);
+int is_prime_number(int n);
 
 /**
- *is_prime_number - evaluate prime or not
- *@num: number
- *Return: return 1 prime - return 0 otherwise
+ *is_divisible - Checks if a number is divisible.
+ *@num: The number to be checked.
+ *@div: The divisor.
+ *
+ *Return: If the number is divisible - 0
+ *	If the number is not divisible - 1
  */
 
-int is_prime_number(int n)
+int is_divisible(int num, int div)
 {
-
-int iterator;
-
-iterator = 2;
-
-/*Only greater than 2*/
-if (num < 2)
-{
-return (0);
-}
-
-if (num == 2)
-{
-return (1);
-}
-
-return (evaluate_num(num, iterator));
+	if (num % div == 0)
+		return (0);
 }
