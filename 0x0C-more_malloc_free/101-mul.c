@@ -188,7 +188,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 int main(int argc, char *argv[])
 {
 	char *final_prod, *next_prod;
-	int size, index, digit_prod;
+	int size, index, digitt_prod;
 	int size, index, digit, zeroes = 0;
 
 	if (argc != 3)
