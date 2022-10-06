@@ -129,6 +129,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 		*prod = (num % 10) + '0';
 		tens = num / 10;
 	}
+
 	if (tens)
 		*prod = (tens % 10) + '0';
 }
@@ -187,6 +188,7 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 int main(int argc, char *argv[])
 {
 	char *final_prod, *next_prod;
+	int size, index, digit_prod;
 	int size, index, digit, zeroes = 0;
 
 	if (argc != 3)
