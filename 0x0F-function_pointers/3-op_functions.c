@@ -29,7 +29,7 @@ int op_sub(int a, int b)
  * @a: first integer
  * @b: second integer
  *
- * Return: result of the division of a and b
+ * Return: result of the product of a and b
  */
 int op_mul(int a, int b)
 {
@@ -53,7 +53,7 @@ int op_div(int a, int b)
  * @a: first integer
  * @b: second integer
  *
- * Return: remainder of a divided by b
+ * Return:result of remainder of a divided by b
  */
 int op_mod(int a, int b)
 {
